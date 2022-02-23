@@ -1,3 +1,9 @@
+# "Time of last modification : $(stat -c %y file1.txt)"
+# "Number of hard links      : $(stat -c %h file1.txt)"
+# "Permissions               : $(stat -c %A file1.txt)"
+# "File Type                 : $(stat -c %F file1.txt)"
+
+
 for i in $*
 do
 if [ -d $i ]
